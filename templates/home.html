@@ -3,6 +3,9 @@
     <h1>Welcome to ZanahIT</h1>
     <p class="lead">This is an application built on python/flask</p>
     <p>ZanahIT</p>
+    {% if session.logged_in == NULL %}
+    <a href="/register" class="btn btn-primary btn-lg">Register</a>
+    <a href="/login" class="btn btn-success btn-lg">Login</a> {% endif %}
 </div>
 
 
