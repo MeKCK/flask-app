@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 ## General info
-This project is simple python flask blogging app 
+This project is a simple python flask blogging app 
 	
 ## Technologies
 Project is created with:
