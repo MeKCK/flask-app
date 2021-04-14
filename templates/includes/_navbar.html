@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">ZanahIT</a>
+        <a class="navbar-brand" href="/">ZanahIT</a>
         <button class="navbar-toggler" type="button">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -23,12 +23,30 @@
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
+
                 </li>
+
 
             </ul>
             <form>
                 <input class="form-control" type="text" placeholder="Search" aria-label="Search">
             </form>
+
+
+
+
+
         </div>
+        <ul class="nav navbar-nav navbar-right">
+            {% if session.logged_in %}
+            <li><a class="nav-link" href="/dashboard">Dashboard</a></li>
+            <li><a class="nav-link" href="/logout">Logout</a></li>
+            {% else %}
+            <li><a class="nav-link" href="/register">Register</a></li>
+            <li><a class="nav-link" href="/login">Login</a></li>
+
+            {% endif %}
+        </ul>
+
     </div>
 </nav>
